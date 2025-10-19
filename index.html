@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio 5</title>
+    <style>
+        /* Google Material Design Colors */
+        :root {
+            --primary-color: #6200ea;
+            /* Deep Purple 500 */
+            --primary-light: #bb86fc;
+            /* Purple 200 */
+            --primary-dark: #3700b3;
+            /* Deep Purple 700 */
+            --secondary-color: #03dac6;
+            /* Teal 200 */
+            --background-color: #f5f5f5;
+            /* Gray 100 */
+            --text-color: #333;
+            /* Almost Black */
+            --accent-color: #ff4081;
+            /* Pink 300 */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header,
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1,
+        footer p {
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .experience,
+        .skills,
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .experience article,
+        .skills article,
+        .projects article {
+            border: 2px solid var(--primary-light);
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 48%;
+            box-sizing: border-box;
+            background: var(--background-color);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .experience article:hover,
+        .skills article:hover,
+        .projects article:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-color);
+        }
+
+        .projects img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid var(--primary-light);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .experience article,
+            .skills article,
+            .projects article {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            header,
+            footer {
+                text-align: left;
+                padding: 10px 20px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🧑‍💻 Pritam Das</h1>
+        <nav>
+            <a href="#about">About Me 🤔</a>
+            <a href="#experience">Experience 💼</a>
+            <a href="#skills">Skills 🛠️</a>
+            <a href="#portfolio">My Work 💻</a>
+            <a href="#contact">Contact 📬</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a web developer with a passion for creating modern and responsive websites. 🚀
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience 💼</h2>
+        <div class="experience">
+            <article>
+                <h3>Frontend Developer @ TechCorp 🖥️</h3>
+                <p>Jan 2020 - Present</p>
+                <p>Worked on developing responsive web applications using React, HTML5, and CSS3. Collaborated with
+                    designers to improve user experiences.</p>
+            </article>
+            <article>
+                <h3>Web Developer @ WebStudio 🌐</h3>
+                <p>Jun 2017 - Dec 2019</p>
+                <p>Built and maintained websites for various clients using HTML, CSS, and JavaScript. Ensured
+                    cross-browser compatibility and mobile responsiveness.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills 🛠️</h2>
+        <div class="skills">
+            <article>
+                <h3>HTML5 & CSS3 📄</h3>
+                <p>Proficient in creating semantic and accessible HTML documents, styling with modern CSS techniques
+                    including Flexbox and Grid.</p>
+            </article>
+            <article>
+                <h3>JavaScript & React ⚛️</h3>
+                <p>Experienced in building interactive user interfaces with React. Familiar with ES6+ features and
+                    modern JavaScript frameworks.</p>
+            </article>
+            <article>
+                <h3>Responsive Design 📱</h3>
+                <p>Adept at designing responsive websites that work across a variety of devices using media queries and
+                    mobile-first design principles.</p>
+            </article>
+            <article>
+                <h3>Version Control with Git 🌳</h3>
+                <p>Comfortable with Git for version control, including branching, merging, and collaborating on projects
+                    using GitHub or GitLab.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Projects 🎨</h2>
+        <div class="projects">
+            <article>
+                <h3>Project 1 🎯</h3>
+                <img src="../images/p1.png" alt="Project 1">
+                <p>This is a description of my first project. 💡</p>
+            </article>
+            <article>
+                <h3>Project 2 🛠️</h3>
+                <img src="../images/p2.png" alt="Project 2">
+                <p>This is a description of my second project. 🔧</p>
+            </article>
+            <article>
+                <h3>Project 3 🌐</h3>
+                <img src="../images/p3.png" alt="Project 3">
+                <p>This is a description of my third project. 🌍</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me 🤝</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send 🚀</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a> 🌐</p>
+
+    </footer>
+</body>
+
+</html>
